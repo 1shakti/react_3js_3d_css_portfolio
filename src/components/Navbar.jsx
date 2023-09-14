@@ -10,7 +10,7 @@ const Navbar = () => {
 
 	return (
 		<nav
-			className={`${styles.paddingX} w-full flex items-center py-5 top-0 z-20 bg-primary `}
+			className={`${styles.paddingX} fixed w-full flex items-center py-5 top-0 z-20 bg-primary `}
 		>
 			<div className=" w-full flex items-center justify-between max-w-7xl mx-auto ">
 				<Link
@@ -60,10 +60,9 @@ const Navbar = () => {
 										active === link.id ? "text-white" : "text-secondary"
 									} hover:text-white text-[18px] font-medium cursor-pointer`}
 									onClick={() => {
-                    setActive(link.id);
-                    setToggle(!toggle);
-                  }
-                  }
+										setActive(link.id);
+										setToggle(!toggle);
+									}}
 								>
 									<Link to={link.id}>{link.title}</Link>
 								</li>
