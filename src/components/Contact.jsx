@@ -5,6 +5,7 @@ import SectionWrapper from "../hoc/SectionWrapper";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
+import Swal from "sweetalert2";
 
 const Contact = () => {
 	const formRef = useRef(null);
@@ -15,9 +16,57 @@ const Contact = () => {
 	});
 	const [loading, setLoading] = useState(false);
 
-	const handleChange = () => {};
+  const message = ({icon,message}) => {
+    Swal.fire({
+      title: message,
+      icon: icon,
+      showConfirmButton: true,
+      background: '#170945',
+      confirmButtonText: 'Ok',
+    })
+  }
 
-	const handleSubmit = () => {};
+  const reset = () => {
+    setForm({
+      name: "",
+      email: "",
+      message: "",
+    });
+  }
+
+  const sendEmail = () => {
+    setLoading(true);
+    emailjs.send('service_0nnzeie','template_eyug5ed',{
+      from_name:form.name,
+      to_name:'Shakti',
+      from_email:form.email,
+      to_email:'shakti26.sj@gmail.com',
+      message: form.message
+    },'cV_sxOkxWu_DhelXT')
+    .then(() => {
+      setLoading(false);
+      reset();
+      message({icon:'success',message:'Thank You, We will get back to you as soon as possible.'});
+    }, (error) => {
+      setLoading(false);
+      message({icon:'error',message:'Something went wrong...'});
+    } );
+  }
+
+	const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setForm((prev) => ({
+      ...prev,
+      [name]: value
+    }))
+
+  };
+
+	const handleSubmit = (e) => {
+    e.preventDefault();
+    sendEmail();
+  };
 
 	return (
 		<div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden ">
@@ -30,7 +79,7 @@ const Contact = () => {
 
 				<form
 					ref={formRef}
-					onSubmit={handleSubmit}
+					onSubmit={(e) => handleSubmit(e)}
 					className="mt-12 flex flex-col gap-8"
 				>
 					<label className="flex flex-col">

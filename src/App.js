@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import { StarsCanvas } from "./components";
 
 
+
 const App = () => {
   return (
     <Router>
@@ -23,7 +24,7 @@ const App = () => {
         <Tech />
         <Works />
         <Feedbacks />
-        <div className=" relative z-0 ">
+        <div className="relative z-0">
           <Contact />
           <StarsCanvas />
         </div>
