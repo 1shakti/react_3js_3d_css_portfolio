@@ -21,7 +21,7 @@ const ServiceCard = ({ index, title, icon }) => {
 					}}
 					className=" py-5 px-12 bg-tertiary rounded-[20px] min-h-[280px] flex flex-col justify-evenly items-center "
 				>
-					<img src={icon} alt={title} className="w-16 h-16 object-contain" />
+					<img src={icon} alt={title} className="w-16 h-16 object-contain rounded-full" />
 					<h3 className="text-white text-[20px] font-bold, text-center">
 						{title}
 					</h3>
@@ -42,10 +42,7 @@ const About = () => {
 				variants={fadeIn("", "", 0.1, 1)}
 				className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
 			>
-				I'm hjgsdfkjds sdfkjfgsdk ksjdgfdskh kjasfgsk kashgfkb hjgsdfkjds
-				sdfkjfgsdk ksjdgfdskh kjasfgsk kashgfkb hjgsdfkjds sdfkjfgsdk ksjdgfdskh
-				kjasfgsk kashgfkb hjgsdfkjds sdfkjfgsdk ksjdgfdskh kjasfgsk kashgfkb
-				hjgsdfkjds sdfkjfgsdk ksjdgfdskh kjasfgsk kashgfkb
+				Software developer with over 4 years of expertise in high-growth startup environments, Skilled in multiple technologies and always eager to learn and grow.
 			</motion.p>
 
 			<div className="mt-20 flex flex-wrap gap-10">

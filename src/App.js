@@ -8,6 +8,7 @@ import Works from "./components/Works";
 import Feedbacks from "./components/Feedbacks";
 import Contact from "./components/Contact";
 import { StarsCanvas } from "./components";
+import Footer from "./components/Footer";
 
 
 
@@ -23,11 +24,12 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
+        {/* <Feedbacks /> */}
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
         </div>
+        <Footer />
       </div>
     </Router>
   );

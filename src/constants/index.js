@@ -2,7 +2,7 @@ import {
     mobile,
     backend,
     creator,
-    web,
+    webdev,
     javascript,
     typescript,
     html,
@@ -23,6 +23,22 @@ import {
     jobit,
     tripguide,
     threejs,
+    carnot,
+    savvy,
+    nextjs,
+    styledcomponents,
+    airtable,
+    appsmith,
+    mysql,
+    php,
+    python,
+    bootstrap,
+    netflixHome,
+    orderimages,
+    speedtypinggame,
+    pacmangame,
+    snakegame,
+    dicerollergame,
   } from "../assets";
   
   export const navLinks = [
@@ -43,20 +59,16 @@ import {
   const services = [
     {
       title: "Web Developer",
-      icon: web,
+      icon: webdev,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
+      title: "React Developer",
+      icon: reactjs,
     },
     {
       title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
+      icon: webdev,
+    }
   ];
   
   const technologies = [
@@ -85,86 +97,70 @@ import {
       icon: redux,
     },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
+      name: "Next JS",
+      icon: nextjs,
     },
     {
-      name: "Node JS",
-      icon: nodejs,
+      name: "Appsmith",
+      icon: appsmith,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "Styeld -Components",
+      icon: styledcomponents,
     },
     {
-      name: "Three JS",
-      icon: threejs,
+      name: "Bootstrap",
+      icon: bootstrap,
+    },
+    {
+      name: "Airtable",
+      icon: airtable,
+    },
+    {
+      name: "PHP",
+      icon: php,
+    },
+    {
+      name: "Mysql",
+      icon: mysql,
+    },
+    {
+      name: "Python",
+      icon: python,
     },
     {
       name: "git",
       icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+    }
   ];
   
   const experiences = [
     {
       title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      company_name: "Carnot Technologies Private Limited",
+      icon: carnot,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Aug 2022 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Worked on several projects using multiple technologies like React Js, Javascript, TypeScript and low-code platforms Appsmith, Airtable",
+        "Developed a multi-language platform for showcasing used tractor inventory and dealer profiles, incorporating lead generation features. Created dynamic dealer profile pages within Digital Dukaan, enabling dealers to showcase tractor videos and generate leads.",
+        "Built an auction platform for used tractors where dealers could bid",
+        "Implemented a system for adding sections or modules without requiring app releases.",
+        "Developed and implemented a server-driven module enabling dynamic additions or modifications from the backend utilizing JSON.",
+        "Collaborated closely with cross-functional teams to gather requirements, design user interfaces, and implement features that align with business objectives."
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Full(PHP and React) stack Developer",
+      company_name: "savvy business solutions private limited",
+      icon: savvy,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Feb 2020 - Aug 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Worked on several projects using multiple technologies like React Js, Javascript, PHP, MySQL, Material UI,",
+        "Developed a ticketing system to manage tickets, registrations and provide authority-wise access.",
+        "Implemented a system for generating IRN using E-invoice API and accepting payments via UPI code. ",
+        "Designed a contract management system to handle contracts for parties including sending reminder emails before 60 days of contract expiry",
       ],
     },
   ];
@@ -198,68 +194,154 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
-      description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      name: "NetFlix",
+      description: "A react clone app built using React.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "fuse.js",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "firebase",
           color: "pink-text-gradient",
         },
+        {
+          name: "styled-components",
+          color: "orange-text-gradient",
+        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: netflixHome,
+      source_code_link: "https://github.com/1shakti/practicecode/tree/main/netflix",
     },
     {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      name: "Buy Images",
+      description: "A react app to order some random images.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "api-call",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "custom-hooks",
           color: "pink-text-gradient",
         },
+        {
+          name: "react-router",
+          color: "white-text-gradient",
+        }
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: orderimages,
+      source_code_link: "https://github.com/1shakti/practicecode/tree/main/reactbasic/buyimage",
     },
     {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      name: "Speedtyping Game",
+      description: "A simple speedtyping game built using react.",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
           color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
         },
         {
           name: "css",
-          color: "pink-text-gradient",
+          color: "green-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: speedtypinggame,
+      source_code_link: "https://github.com/1shakti/practicecode/tree/main/speedtyping",
+    },
+    {
+      name: "Pacman Game",
+      description: "Building a simple pacman game.",
+      tags: [
+        {
+          name: "JavaScript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "JavaScript DOM",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "event listeners",
+          color: "green-text-gradient",
+        },
+        {
+          name: "html",
+          color: "purple-text-gradient",
+        },
+        {
+          name: "css",
+          color: "orange-text-gradient",
+        }
+      ],
+      image: pacmangame,
+      source_code_link: "https://github.com/1shakti/practicecode/tree/main/js_concepts/pacman",
+    },
+    {
+      name: "Snake Game",
+      description: "A simple snake game.",
+      tags: [
+        {
+          name: "JavaScript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "JavaScript DOM",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "event listeners",
+          color: "green-text-gradient",
+        },
+        {
+          name: "html",
+          color: "purple-text-gradient",
+        },
+        {
+          name: "css",
+          color: "orange-text-gradient",
+        }
+      ],
+      image: snakegame,
+      source_code_link: "https://github.com/1shakti/practicecode/tree/main/css_jsfundamentals/Snake_Game",
+    },
+    {
+      name: "Dice Roller Game",
+      description: "Again a simple roller dice game.",
+      tags: [
+        {
+          name: "JavaScript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "JavaScript DOM",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "event listeners",
+          color: "green-text-gradient",
+        },
+        {
+          name: "html",
+          color: "purple-text-gradient",
+        },
+        {
+          name: "css",
+          color: "orange-text-gradient",
+        }
+      ],
+      image: dicerollergame,
+      source_code_link: "https://github.com/1shakti/practicecode/tree/main/css_jsfundamentals/Dice_Game",
     },
   ];
+  
   
   export { services, technologies, experiences, testimonials, projects };
