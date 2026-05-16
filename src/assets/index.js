@@ -22,6 +22,12 @@ import php from "./tech/php.png";
 
 import savvy from "./company/savvy.png";
 import carnot from "./company/carnot.png";
+import fortytwo from "./company/42cards.png";
+import flexm from "./company/flexm.svg";
+import tailwind from "./tech/tailwind.png";
+import nodejs from "./tech/nodejs.png";
+import mongodb from "./tech/mongodb.png";
+import figma from "./tech/figma.png";
 
 import githubsocial from "./social/github.svg";
 import gmail from "./social/gmail.svg";
@@ -58,6 +64,12 @@ export {
   bootstrap,
   carnot,
   savvy,
+  fortytwo,
+  flexm,
+  tailwind,
+  nodejs,
+  mongodb,
+  figma,
   githubsocial,
   gmail,
   linkedin,

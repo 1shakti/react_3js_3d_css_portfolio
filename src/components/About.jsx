@@ -42,7 +42,7 @@ const About = () => {
 				variants={fadeIn("", "", 0.1, 1)}
 				className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
 			>
-				Software developer with over 4 years of expertise in high-growth startup environments, Skilled in multiple technologies and always eager to learn and grow.
+				Frontend Engineer with 5+ years of experience building scalable fintech, marketplace, and enterprise web applications using React.js, TypeScript, and modern frontend architecture. Specialized in performance optimization, scalable UI systems, and developer experience enhancements.
 			</motion.p>
 
 			<div className="mt-20 flex flex-wrap gap-10">
