@@ -1,7 +1,4 @@
 import {
-    mobile,
-    backend,
-    creator,
     webdev,
     javascript,
     typescript,
@@ -14,25 +11,12 @@ import {
     mongodb,
     git,
     figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
     carnot,
     savvy,
+    fortytwo,
+    flexm,
     nextjs,
-    styledcomponents,
-    airtable,
-    appsmith,
     mysql,
-    php,
-    python,
-    bootstrap,
     netflixHome,
     orderimages,
     speedtypinggame,
@@ -58,7 +42,7 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Frontend Engineer",
       icon: webdev,
     },
     {
@@ -66,12 +50,36 @@ import {
       icon: reactjs,
     },
     {
-      title: "Backend Developer",
+      title: "Performance Optimizer",
       icon: webdev,
     }
   ];
   
   const technologies = [
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
+      name: "TypeScript",
+      icon: typescript,
+    },
+    {
+      name: "JavaScript",
+      icon: javascript,
+    },
+    {
+      name: "Next JS",
+      icon: nextjs,
+    },
+    {
+      name: "Redux Toolkit",
+      icon: redux,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: tailwind,
+    },
     {
       name: "HTML 5",
       icon: html,
@@ -81,86 +89,79 @@ import {
       icon: css,
     },
     {
-      name: "JavaScript",
-      icon: javascript,
+      name: "Node.js",
+      icon: nodejs,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "MongoDB",
+      icon: mongodb,
     },
     {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Next JS",
-      icon: nextjs,
-    },
-    {
-      name: "Appsmith",
-      icon: appsmith,
-    },
-    {
-      name: "Styeld -Components",
-      icon: styledcomponents,
-    },
-    {
-      name: "Bootstrap",
-      icon: bootstrap,
-    },
-    {
-      name: "Airtable",
-      icon: airtable,
-    },
-    {
-      name: "PHP",
-      icon: php,
-    },
-    {
-      name: "Mysql",
+      name: "MySQL",
       icon: mysql,
     },
     {
-      name: "Python",
-      icon: python,
+      name: "Git",
+      icon: git,
     },
     {
-      name: "git",
-      icon: git,
+      name: "Figma",
+      icon: figma,
     }
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Carnot Technologies Private Limited",
-      icon: carnot,
+      title: "Frontend Development Engineer",
+      company_name: "42 Card Solutions Private Limited",
+      icon: fortytwo,
       iconBg: "#383E56",
-      date: "Aug 2022 - Present",
+      date: "Sep 2025 - Present",
       points: [
-        "Worked on several projects using multiple technologies like React Js, Javascript, TypeScript and low-code platforms Appsmith, Airtable",
-        "Developed a multi-language platform for showcasing used tractor inventory and dealer profiles, incorporating lead generation features. Created dynamic dealer profile pages within Digital Dukaan, enabling dealers to showcase tractor videos and generate leads.",
-        "Built an auction platform for used tractors where dealers could bid",
-        "Implemented a system for adding sections or modules without requiring app releases.",
-        "Developed and implemented a server-driven module enabling dynamic additions or modifications from the backend utilizing JSON.",
-        "Collaborated closely with cross-functional teams to gather requirements, design user interfaces, and implement features that align with business objectives."
+        "Leading frontend development for fintech product modules serving multiple banking partners using React.js, TypeScript, Redux Toolkit, and Material UI.",
+        "Led migration from Create React App (CRA) to Vite, reducing local build/startup time by ~70% and improving developer productivity.",
+        "Improved frontend performance and Core Web Vitals using route-level code splitting, React.lazy, dynamic imports, memoization, and asset optimization.",
+        "Resolved critical frontend security vulnerabilities and implemented secure coding practices across authentication flows and API integrations.",
+        "Managed CI/CD workflows using AWS Amplify, streamlining deployment processes and reducing manual release overhead.",
       ],
     },
     {
-      title: "Full(PHP and React) stack Developer",
-      company_name: "savvy business solutions private limited",
+      title: "Software Development Engineer",
+      company_name: "Flexm Pvt Ltd",
+      icon: flexm,
+      iconBg: "#E6DEDD",
+      date: "Sep 2024 - Aug 2025",
+      points: [
+        "Enhanced enterprise compliance platform using React.js, TypeScript, Redux Toolkit, React Router, and React Hook Form.",
+        "Built scalable and reusable UI systems using Material UI and customized design patterns for consistency across modules.",
+        "Improved rendering performance using route-level code splitting, memoization, virtualization, debouncing, and progressive rendering.",
+        "Conducted frontend performance audits using Lighthouse and WebPageTest, optimizing bundle size, load time, and interaction responsiveness.",
+      ],
+    },
+    {
+      title: "Frontend Developer",
+      company_name: "Carnot Technologies Private Limited",
+      icon: carnot,
+      iconBg: "#383E56",
+      date: "Aug 2022 - May 2024",
+      points: [
+        "Developed a multilingual tractor marketplace platform enabling dealers across multiple states to manage inventory listings.",
+        "Built a real-time bidding platform for NBFC-managed tractor inventory actively used by 50+ dealers for auction participation.",
+        "Built a server-driven UI module allowing frontend sections to be dynamically rendered through backend JSON configurations.",
+        "Optimized API handling using TanStack Query for caching, background synchronization, and efficient server-state management.",
+      ],
+    },
+    {
+      title: "Junior Software Developer",
+      company_name: "Savvy Business Solutions Pvt. Ltd",
       icon: savvy,
       iconBg: "#E6DEDD",
       date: "Feb 2020 - Aug 2022",
       points: [
-        "Worked on several projects using multiple technologies like React Js, Javascript, PHP, MySQL, Material UI,",
-        "Developed a ticketing system to manage tickets, registrations and provide authority-wise access.",
-        "Implemented a system for generating IRN using E-invoice API and accepting payments via UPI code. ",
-        "Designed a contract management system to handle contracts for parties including sending reminder emails before 60 days of contract expiry",
+        "Developed responsive business web applications using React.js, JavaScript, PHP, MySQL, Material UI, and Bootstrap.",
+        "Built a ticketing and registration management system with role-based access controls for operational workflow management.",
+        "Integrated E-invoice APIs for automated IRN generation and implemented UPI-based payment processing workflows.",
+        "Developed a contract lifecycle management system with automated expiry reminders, improving compliance tracking.",
       ],
     },
   ];
